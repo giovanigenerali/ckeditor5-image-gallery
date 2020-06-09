@@ -6,7 +6,6 @@ import ButtonIcon from '@ckeditor/ckeditor5-core/theme/icons/image.svg';
 
 class InsertImage extends Command {
   execute({ src, alt }) {
-    console.log(src, alt);
     const editor = this.editor;
 
     editor.model.change((writer) => {
