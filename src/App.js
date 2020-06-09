@@ -31,30 +31,13 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 
-/** Plugin */
+/** Custom Plugin */
 import ImageGallery from './plugins/ImageGallery';
+
 /** Translate */
 import './translation/pt-br';
 
-const images = [
-  {
-    id: 1,
-    src: 'http://localhost:3000/assets/product1.jpg',
-  },
-  {
-    id: 2,
-    src: 'http://localhost:3000/assets/product2.jpg',
-  },
-  {
-    id: 3,
-    src: 'http://localhost:3000/assets/product3.jpg',
-  },
-  {
-    id: 4,
-    src: 'http://localhost:3000/assets/product4.jpg',
-  },
-];
-
+/** Components */
 import ImagesList from './components/ImagesList';
 
 export default function App() {
@@ -153,10 +136,6 @@ export default function App() {
     setEditorData(editor.getData());
   };
 
-  const handleImagesList = () => {
-    return <>{showImagesList && <ImagesList editor={editor} />}</>;
-  };
-
   return (
     <div>
       <CKEditor
@@ -174,7 +153,7 @@ export default function App() {
         style={{ width: '100%', height: '200px' }}
       />
 
-      {handleImagesList()}
+      {showImagesList && <ImagesList editor={editor} />}
     </div>
   );
 }
