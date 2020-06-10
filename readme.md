@@ -8,4 +8,4 @@ https://ckeditor-products.netlify.app/
 
 ### Preview
 
-<img src="screenshot.gif">
+![](https://user-images.githubusercontent.com/41435/84213616-8799ab00-aa97-11ea-97be-6449b843cf34.gif)
