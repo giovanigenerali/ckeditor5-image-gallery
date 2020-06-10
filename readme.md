@@ -4,7 +4,7 @@ Example of how to insert images in the CKEditor5 through an image gallery that l
 
 ### Demo
 
-[https://ckeditor-products.netlify.app](https://ckeditor-products.netlify.app)
+[https://ckeditor5-image-gallery.netlify.app](https://ckeditor5-image-gallery.netlify.app)
 
 ### Preview
 
